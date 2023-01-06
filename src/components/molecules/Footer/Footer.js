@@ -22,21 +22,19 @@ const Footer = () => {
                         `}} />
                     </div>
                     <div className="grid grid-cols-2">
-                        <Link href="https://www.ccbrasil.cc/">
-                            <a target="_blank" rel="noreferrer">
+                        <Link href="https://www.ccbrasil.cc/"target="_blank" rel="noreferrer">
+                           
                                 <LazyLoad>
                                     <img src="/img/cap-consciente-logo.webp" />
                                     <span className="text-0">ccbrasil</span>
                                 </LazyLoad>
-                            </a>
+                        
                         </Link>
-                        <Link href="https://carbonext.com.br/">
-                            <a target="_blank" rel="noreferrer">
-                                <LazyLoad>
+                        <Link href="https://carbonext.com.br/" target="_blank" rel="noreferrer">
+                          <LazyLoad>
                                     <img src="/img/selo-carbonext.webp" />
                                     <span className="text-0">carbonext</span>
-                                </LazyLoad>
-                            </a>
+                         </LazyLoad>
                         </Link>
                     </div>
                 </div>
@@ -47,22 +45,22 @@ const Footer = () => {
                         </li>
                         <li className="mb-10 opacity-60">
                             <Link href="https://adventures.inc">
-                                <a target="_blank" rel="noreferrer">Adventures</a>
+                                <span target="_blank" rel="noreferrer">Adventures</span>
                             </Link>
                         </li >
                         <li className="mb-10 opacity-60">
                             <Link href="https://partnersadventures.com/">
-                                <a target="_blank" rel="noreferrer">AdventuresPartners</a>
+                                <span target="_blank" rel="noreferrer">AdventuresPartners</span>
                             </Link>
                         </li >
                         <li className="mb-10 opacity-60">
-                            <Link href="https://culture.adventures.inc">
-                                <a target="_blank" rel="noreferrer">Cultura da Adventures</a>
+                            <Link href="https://culture.adventures.inc"target="_blank" rel="noreferrer">
+                                <span>Cultura da Adventures</span>
                             </Link>
                         </li>
                         <li className="mb-10 opacity-60">
-                            <Link href="https://jobs.kenoby.com/adventures">
-                                <a target="_blank">Junte-se ao Time</a>
+                            <Link href="https://jobs.kenoby.com/adventures"target="_blank">
+                                <span >Junte-se ao Time</span>
                             </Link>
                         </li>
                     </ul>
@@ -80,23 +78,23 @@ const Footer = () => {
                         <p className="mb-26 opacity-60">CEP: 22640-040</p>
                     </address>
                     <nav className="flex text-22 px-15 mb-38">
-                        <Link href="https://www.facebook.com/thead.partners">
-                            <a target="_blank" className="mr-8" rel="noreferrer">
+                        <Link href="https://www.facebook.com/thead.partners"target="_blank"  rel="noreferrer">
+                            <span className="mr-8">
                                 <span className="text-0">facebook</span>
                                 <TiSocialFacebook />
-                            </a>
+                            </span>
                         </Link>
-                        <Link href="https://www.instagram.com/thead.partners/">
-                            <a target="_blank" className="mr-8" rel="noreferrer">
+                        <Link href="https://www.instagram.com/thead.partners/"target="_blank"rel="noreferrer">
+                            <samp  className="mr-8" >
                                 <span className="text-0">instagram</span>
                                 <AiOutlineInstagram />
-                            </a>
+                            </samp>
                         </Link>
-                        <Link href="https://www.linkedin.com/company/theadventures-partners/">
-                            <a target="_blank" className="mr-8" rel="noreferrer">
+                        <Link href="https://www.linkedin.com/company/theadventures-partners/"target="_blank"rel="noreferrer" >
+                            <samp className="mr-8" >
                                 <span className="text-0">linkedin</span>
                                 <FaLinkedinIn />
-                            </a>
+                            </samp>
                         </Link>
                     </nav>
                 </div>

@@ -1,0 +1,40 @@
+.marcas .swiper-pagination {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.marcas .swiper-pagination-bullet {
+    width: 25px !important;
+    height: 4px !important;
+    background: #fff !important;
+    border-radius: 0 !important;
+}
+
+.marcas img {
+    margin: 0 auto;
+}
+
+.marcas .swiper-pagination {
+    text-align: center;
+}
+
+/*
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "" !important;
+
+} 
+*/
+
+.cases-img{height: 460px; object-fit: cover; object-position: center;}
+
+@media (min-width: 768px){
+    .cases-img:nth-child(1){
+        object-fit: cover;
+        object-position: center 20%;
+        
+    }
+    .cases-img{
+        height: initial;
+    }
+}

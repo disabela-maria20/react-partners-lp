@@ -1,0 +1,169 @@
+/* Mobile */
+.accordio {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #2400FE;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 37px;
+    transition: all 400ms ease-in;
+}
+
+summary::marker {
+    content: "";
+}
+
+.accordio summary {
+    cursor: pointer;
+}
+
+.accordio summary span {
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+    color: #fff;
+    width: 190px;
+    font-weight: 700;
+}
+
+.accordio summary::after {
+    content: '';
+    background-image: url('../../../public/img/circle_chevron_up.webp');
+    position: absolute;
+    top: 40%;
+    right: 37px;
+    width: 40px;
+    height: 40px;
+}
+
+.accordio[open] summary::after {
+    content: '';
+    background-image: url('../../../public/img/circle_chevron_up_true.webp');
+    top: 5%;
+    width: 60px;
+    height: 60px;
+}
+
+.accordio[open] {
+    background: #1f1f1f;
+    box-shadow: none;
+    -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-up-ver-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.accordio[open] summary span {
+    color: #2400FE;
+}
+
+.accordio[open] p {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    margin-top: 20px;
+}
+
+/* @media(min-width: 575px) {
+    .accordio[open] p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+} */
+
+
+
+@-webkit-keyframes scale-up-ver-top {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+}
+
+@keyframes scale-up-ver-top {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+}
+
+/* Desktop */
+@media(min-width: 1024px) {
+    .accordio-desk {
+        width: 20%;
+        cursor: pointer;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #2400FE;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: 430px;
+        padding: 27px;
+        transition: all 200ms ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .accordio-desk h2 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.9rem;
+        width: 75%;
+    }
+
+    .accordio-desk p {
+        display: none;
+        /* transition: all 400ms ease 10ms; */
+    }
+
+    /* .accordio-desk h2:not(.active) {
+       width: 80%;     
+    } */
+
+    .accordio-desk.active {
+        background: #101010;
+        flex-shrink: 0;
+        width: 40%;
+        flex-direction: column;
+    }
+
+    .accordio-desk.active h2 {
+        color: #2400FE;
+        width: auto;
+    }
+
+    .accordio-desk.active p {
+        display: block;
+        color: #fff;
+    }
+}
+/* @media(min-width: 1560px){
+    .accordio-desk p{
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+    }
+    .accordio-desk{
+        height: 660px;
+    }
+}
+@media(min-width: 1560px){
+    .accordio-desk h2 {
+        font-size: 2.6rem;
+        line-height: 3.1rem;
+    }
+    .accordio-desk p{
+        font-size: 1.8rem;
+    }
+} */

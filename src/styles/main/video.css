@@ -1,0 +1,56 @@
+.video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 19.25%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.mvideo {
+    position: relative;
+    overflow: hidden;
+    /* padding-top: 15.25%; */
+}
+
+.mvideo iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 50vw !important;
+    border: 0;
+}  
+
+.react-player {
+    aspect-ratio: 16 / 9;
+}
+
+.yt-lite{
+    width: 100vw;
+}
+
+@media (min-width: 768px){
+    .video{
+         padding-top: 0;
+    }
+    .mvideo{
+        padding: 0;
+    }
+    .mvideo iframe {
+        width: 100%!important;
+        height: 23vw!important;
+    }  
+    
+    .yt-lite{
+        width: 100vh;
+        margin: 0 auto;
+    }
+}
+
